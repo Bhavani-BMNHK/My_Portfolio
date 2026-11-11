@@ -1,678 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhavani | AI/ML, Data Science & Python Developer</title>
-    <meta name="description" content="Bhavani - Computer Science graduate, Python Developer and AI/ML Enthusiast">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavani | AI/ML & Python Developer</title>
+  <meta name="description" content="Bhavani, Computer Science graduate and Python / AI-ML developer from Bengaluru. Machine learning, NLP, computer vision, Generative AI and Django projects, two internships, open to entry-level roles.">
+  <meta property="og:title" content="Bhavani | AI/ML & Python Developer">
+  <meta property="og:description" content="Python / AI-ML developer from Bengaluru. See my machine learning, NLP, computer vision and Django projects.">
+  <meta property="og:type" content="website">
 
-    <!-- Social preview tags -->
-    <meta property="og:title" content="Bhavani | AI/ML, Data Science & Python Developer">
-    <meta property="og:description" content="Computer Science graduate, Python Developer and AI/ML Enthusiast">
-    <meta property="og:type" content="website">
-
-    <!-- Simple emoji favicon, no image file needed -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐍</text></svg>">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-      href="{{ url_for('static', filename='style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
 
-<!-- ===================== HEADER ===================== -->
 <header>
-    <div class="container navbar">
-        <a href="#home" class="logo">Bhavani<span>.</span></a>
-
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
-
-        <nav id="navMenu">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#education-training">Training</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
+  <div class="container navbar">
+    <a href="#home" class="logo">Bhavani<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+      <a href="/Bhavani_Resume.pdf" class="nav-cta" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-<!-- ===================== HERO ===================== -->
+<!-- ============ HERO ============ -->
 <section class="hero" id="home">
-    <img class="hero-bg"
-         src="{{ url_for('static', filename='images/bhavani.jpg') }}"
-         alt="Bhavani">
-    <div class="hero-overlay"></div>
-
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="name">
-                Hi, I'm Bhavani<br>
-                Aspiring AI/ML Engineer, Data Scientist &amp; Python Developer
-            </h1>
-
-            <p class="hero-tagline">
-                Passionate About AI, Machine Learning, Data Science &amp; Python Development
-            </p>
-
-            <div class="buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
-        </div>
+  <img class="hero-bg" src="/images/bhavani.jpg" alt="Portrait of Bhavani">
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="name">Hi, I'm Bhavani.<br>AI/ML &amp; Python Developer</h1>
+      <p class="hero-tagline">
+        I build machine learning, NLP and computer vision applications with Python, Django and Streamlit,
+        and I'm trained in Generative AI and agentic workflows (LangChain, LangGraph).
+        Two internships, 10+ projects, based in Bengaluru and open to entry-level roles.
+      </p>
+      <div class="buttons">
+        <a href="/Bhavani_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Resume</a>
+        <a href="#projects" class="btn btn-outline">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- ===================== ABOUT ===================== -->
+<!-- ============ ABOUT ============ -->
 <section id="about">
-    <div class="container">
-        <div class="section-title">
-            <small>About Me</small>
-            <h2>Turning ideas into practical projects.</h2>
-            <p>A Computer Science graduate passionate about Python, AI, Machine Learning and Data Science.</p>
-        </div>
-
-        <div class="about-grid">
-            <div class="glass about-text">
-                <p>I'm <strong>Bhavani</strong>, a recently graduated Computer Science and Engineering student from <strong>Sri Revana Siddeshwara Institute of Technology (SRSIT), Bengaluru.</strong></p>
-                <p>I completed my B.E. in Computer Science and Engineering with a <strong>CGPA of 8.06/10.0</strong>. I enjoy building practical applications and learning through real-world projects.</p>
-                <p>My technical interests include <strong>Python Development, Data Science, Machine Learning, AI and NLP.</strong> I have worked with Python libraries such as Pandas, NumPy, Matplotlib and Scikit-learn.</p>
-                <p>I have also developed applications using <strong>Django, Flask and REST APIs</strong>, along with data analysis and machine learning projects.</p>
-                <p>I am currently looking for an opportunity where I can <strong>learn, contribute and grow</strong> as a Data Scientist, Python Developer or AI/ML professional.</p>
-            </div>
-
-            <div class="glass about-info">
-                <div class="info-item">
-                    <div class="info-label">Education</div>
-                    <div class="info-value">B.E. Computer Science & Engineering</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">College</div>
-                    <div class="info-value">SRSIT, Bengaluru</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">CGPA</div>
-                    <div class="info-value">8.06 / 10.0</div>
-                </div>
-                <div class="info-item">
-                    <div class="info-label">Career Interest</div>
-                    <div class="info-value">Python Developer,Data Science & AI/ML</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="stats">
-            <div class="glass stat-card">
-                <div class="num">8.06</div>
-                <div class="lbl">B.E. CGPA / 10.0</div>
-            </div>
-            <div class="glass stat-card">
-                <div class="num">Python</div>
-                <div class="lbl">Primary programming language</div>
-            </div>
-            <div class="glass stat-card">
-                <div class="num">AI/ML</div>
-                <div class="lbl">Area of professional interest</div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>01 / about</small>
+      <h2>Turning ideas into working projects.</h2>
     </div>
+
+    <div class="about-grid">
+      <div class="glass about-text">
+        <p>I'm <strong>Bhavani</strong>, a Computer Science and Engineering graduate from <strong>SRSIT, Bengaluru</strong> (B.E., CGPA 8.06/10).</p>
+        <p>I build <strong>machine learning and NLP applications</strong> end to end: cleaning data, training and comparing models, and putting them behind a working web interface with <strong>Django, Flask and Streamlit</strong>.</p>
+        <p>My projects include a face and voice recognition attendance system, a news summarizer built on transformer models, and classification and segmentation models on real datasets. Through the Apna College AI &amp; ML Prime 2.0 course I also studied <strong>Generative AI, LLMs, agentic AI (LangChain, LangGraph) and OpenCV</strong>.</p>
+        <p>I'm looking for an <strong>entry-level AI/ML Engineer</strong> role (Data Science or Python Developer roles also welcome) where I can contribute to real products and keep learning.</p>
+      </div>
+
+      <div class="glass about-info">
+        <div class="info-item">
+          <div class="info-label">education</div>
+          <div class="info-value">B.E. Computer Science &amp; Engineering, SRSIT</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">location</div>
+          <div class="info-value">Bengaluru, Karnataka</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">looking for</div>
+          <div class="info-value">AI/ML Engineer · Data Science · Python Developer</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="glass stat-card"><div class="num">2</div><div class="lbl">Internships completed</div></div>
+      <div class="glass stat-card"><div class="num">10+</div><div class="lbl">Projects built (ML, NLP, web)</div></div>
+      <div class="glass stat-card"><div class="num">Best Performer</div><div class="lbl">Python Developer Internship, Elevate Labs</div></div>
+    </div>
+  </div>
 </section>
 
-<!-- ===================== SKILLS ===================== -->
+<!-- ============ SKILLS ============ -->
 <section id="skills">
-    <div class="container">
-        <div class="section-title">
-            <small>Skills</small>
-            <h2>My technical toolkit.</h2>
-            <p>Technologies and tools I have learned and used in academic and project work.</p>
-        </div>
-
-        <div class="skills-grid">
-            <div class="glass skill-card">
-                <h3>Programming</h3>
-                <div class="skill-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">SQL</span>
-                </div>
-            </div>
-
-            <div class="glass skill-card">
-                <h3>Machine Learning</h3>
-                <div class="skill-tags">
-                    <span class="tag">Scikit-learn</span>
-                    <span class="tag">Logistic Regression</span>
-                    <span class="tag">Decision Tree</span>
-                    <span class="tag">Random Forest</span>
-                    <span class="tag">KNN</span>
-                    <span class="tag">K-Means</span>
-                    <span class="tag">PyTorch</span>
-                </div>
-            </div>
-
-            <div class="glass skill-card">
-                <h3>Data Science</h3>
-                <div class="skill-tags">
-                    <span class="tag">Pandas</span>
-                    <span class="tag">NumPy</span>
-                    <span class="tag">Matplotlib</span>
-                    <span class="tag">EDA</span>
-                    <span class="tag">Data Cleaning</span>
-                    <span class="tag">Data Preprocessing</span>
-                </div>
-            </div>
-
-            <div class="glass skill-card">
-                <h3>Web & Tools</h3>
-                <div class="skill-tags">
-                    <span class="tag">Django</span>
-                    <span class="tag">Flask</span>
-                    <span class="tag">REST API</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">GitHub</span>
-                    <span class="tag">VS Code</span>
-                    <span class="tag">Jupyter Notebook</span>
-                </div>
-            </div>
-
-            <div class="glass skill-card">
-                <h3>NLP</h3>
-                <div class="skill-tags">
-                    <span class="tag">Text Processing</span>
-                    <span class="tag">Keyword Extraction</span>
-                    <span class="tag">NLP Summarization</span>
-                    <span class="tag">pdfplumber</span>
-                </div>
-            </div>
-
-            <div class="glass skill-card">
-                <h3>Other Technologies</h3>
-                <div class="skill-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">FastAPI</span>
-                    <span class="tag">Streamlit</span>
-                    <span class="tag">Supabase</span>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>02 / skills</small>
+      <h2>My technical toolkit.</h2>
+      <p>Tools I have used in internship, course and project work.</p>
     </div>
+
+    <div class="skills-grid">
+      <div class="glass skill-card">
+        <h3>Programming</h3>
+        <div class="skill-tags"><span class="tag">Python</span><span class="tag">SQL</span></div>
+      </div>
+      <div class="glass skill-card">
+        <h3>Data Science</h3>
+        <div class="skill-tags">
+          <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span>
+          <span class="tag">EDA</span><span class="tag">Data Cleaning</span><span class="tag">Preprocessing</span>
+        </div>
+      </div>
+      <div class="glass skill-card">
+        <h3>Machine Learning</h3>
+        <div class="skill-tags">
+          <span class="tag">Scikit-learn</span><span class="tag">Logistic Regression</span><span class="tag">Decision Tree</span>
+          <span class="tag">Random Forest</span><span class="tag">KNN</span><span class="tag">K-Means</span>
+        </div>
+      </div>
+      <div class="glass skill-card">
+        <h3>NLP</h3>
+        <div class="skill-tags">
+          <span class="tag">Hugging Face Transformers</span><span class="tag">BART / T5</span><span class="tag">Text Summarization</span>
+          <span class="tag">Keyword Extraction</span><span class="tag">pdfplumber</span>
+        </div>
+      </div>
+      <div class="glass skill-card">
+        <h3>Generative AI &amp; Agents</h3>
+        <div class="skill-tags">
+          <span class="tag">Generative AI</span><span class="tag">LLMs</span><span class="tag">Agentic AI</span>
+          <span class="tag">LangChain</span><span class="tag">LangGraph</span>
+        </div>
+      </div>
+      <div class="glass skill-card">
+        <h3>Computer Vision</h3>
+        <div class="skill-tags">
+          <span class="tag">OpenCV</span><span class="tag">Face Recognition</span>
+        </div>
+      </div>
+      <div class="glass skill-card">
+        <h3>Web &amp; Apps</h3>
+        <div class="skill-tags">
+          <span class="tag">Django</span><span class="tag">Flask</span><span class="tag">REST API</span>
+          <span class="tag">Streamlit</span><span class="tag">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="glass skill-card">
+        <h3>Database &amp; Deployment</h3>
+        <div class="skill-tags">
+          <span class="tag">Supabase</span><span class="tag">Vercel</span>
+        </div>
+      </div>
+      <div class="glass skill-card">
+        <h3>Tools</h3>
+        <div class="skill-tags">
+          <span class="tag">Git</span><span class="tag">GitHub</span>
+          <span class="tag">Jupyter Notebook</span><span class="tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ===================== PROJECTS ===================== -->
+<!-- ============ PROJECTS ============ -->
 <section id="projects">
-    <div class="container">
-        <div class="section-title">
-            <small>Projects</small>
-            <h2>Things I've built.</h2>
-            <p>Academic, internship and personal projects focused on Python, AI/ML and web development.</p>
-        </div>
-
-        <div class="projects-grid">
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">AI / Computer Vision &amp; Voice</div>
-                    <h3>Intelligent AI Attendance System</h3>
-                    <p>A web-based attendance system where teachers manage subjects and students and take attendance using face recognition and voice recognition. Attendance is stored in Supabase, with attendance records, CSV download and analytics for teachers. Customized and extended from the Apna College AI Attendance project, and deployed with a separate Flask landing page.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Streamlit</span><span>Supabase</span><span>Face Recognition</span><span>Resemblyzer</span><span>Librosa</span><span>Flask</span><span>Vercel</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Bhavani-BMNHK/intelligent-ai-attendance" target="_blank" rel="noopener" class="project-link">App on GitHub →</a>
-                    <a href="https://github.com/Bhavani-BMNHK/ai-attendance-landing-page" target="_blank" rel="noopener" class="project-link">Landing Page Code →</a>
-                    <a href="https://ai-attendance-landing-page-one.vercel.app/" target="_blank" rel="noopener" class="project-link">Live Landing Page →</a>
-                </div>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">Major College Project</div>
-                    <h3>AI-Based News Aggregator</h3>
-                    <p>Developed an AI-based news aggregation and summarization system as my major college project. The system focuses on collecting news from multiple sources and using NLP and AI techniques for processing, categorization and summarization.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>NLP</span><span>AI/ML</span><span>Web Scraping</span><span>Summarization</span>
-                    </div>
-                </div>
-                <a href="#contact" class="project-link">Major Project →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">AI / Machine Learning</div>
-                    <h3>SmartCart Customer Segmentation</h3>
-                    <p>A machine learning project focused on customer segmentation and identifying customer groups using data-driven techniques.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Machine Learning</span><span>K-Means</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/SmartCart-Segmentation-System" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">AI / Machine Learning</div>
-                    <h3>CreditWise Loan Prediction</h3>
-                    <p>A machine learning project that predicts loan approval using applicant and financial information. The project applies classification techniques to support loan decision-making.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Machine Learning</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/CreditWise-Loan-System" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">AI / Machine Learning</div>
-                    <h3>Cinnamon Quality Classification</h3>
-                    <p>Built a classification model to identify cinnamon quality using chemical-property data. Random Forest and KNN achieved strong test performance in the project.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Random Forest</span><span>KNN</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/AI-ML-Django-Projects" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">AI / Machine Learning</div>
-                    <h3>Crop Recommendation System</h3>
-                    <p>Developed a machine learning system that uses soil nutrient and climate information to recommend suitable crops with prediction confidence.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Machine Learning</span><span>Random Forest</span><span>Django</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/AI-ML-Django-Projects" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">AI / NLP</div>
-                    <h3>AI Resume Analyzer</h3>
-                    <p>Built an NLP-based resume screening system that analyzes resumes and identifies suitable job roles. The project also integrates job recommendations.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>NLP</span><span>pdfplumber</span><span>Django</span><span>API</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/AI-ML-Django-Projects" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">AI / NLP</div>
-                    <h3>AI News Summarization</h3>
-                    <p>Built a text summarization application that processes news articles and produces concise summaries using NLP techniques and transformer based text processing.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>NLP</span><span>BART</span><span>Text Summarization</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/Text-Summarizer-T5-App" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">Python / Flask</div>
-                    <h3>REST API with Flask</h3>
-                    <p>Developed a REST API using Flask with GET, POST, PUT and DELETE operations for managing user data.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Flask</span><span>REST API</span><span>JSON</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/task-4-rest-api" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">Python</div>
-                    <h3>News Headlines Scraper</h3>
-                    <p>Built a Python web scraper that collects public news headlines using Requests and BeautifulSoup and saves the collected headlines into a text file.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Requests</span><span>BeautifulSoup</span><span>Web Scraping</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/task-3-news-scraper" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">Python CLI</div>
-                    <h3>To-Do List Application</h3>
-                    <p>Created a console-based task management application with persistent file storage for adding, viewing and removing tasks.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>CLI</span><span>File Handling</span><span>Lists</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/-task-2-todo" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-            <div class="glass project-card">
-                <div>
-                    <div class="project-type">Python CLI</div>
-                    <h3>Calculator CLI App</h3>
-                    <p>Built a command-line calculator supporting addition, subtraction, multiplication and division with input handling and division-by-zero protection.</p>
-                    <div class="project-tech">
-                        <span>Python</span><span>Functions</span><span>Loops</span><span>CLI</span>
-                    </div>
-                </div>
-                <a href="https://github.com/Bhavani-BMNHK/task-1-calculator" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
-            </div>
-
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>03 / projects</small>
+      <h2>Things I've built.</h2>
+      <p>Featured work first. Smaller practice projects are at the bottom.</p>
     </div>
+
+    <div class="projects-grid">
+
+      <article class="glass project-card">
+        <div>
+          <div class="project-type">AI / Computer Vision &amp; Voice</div>
+          <h3>Intelligent AI Attendance System</h3>
+          <p>Teachers manage subjects and students and take attendance with face recognition and voice recognition. Records are stored in Supabase, with CSV export and analytics. Extended from the Apna College AI Attendance project with voice verification, Supabase storage, analytics and a deployed Flask landing page.</p>
+          <!-- TODO: add one result line, e.g. <p class="project-result">Recognises faces at ~X% accuracy on N students</p> -->
+          <div class="project-tech">
+            <span>Python</span><span>Streamlit</span><span>Supabase</span><span>Face Recognition</span><span>Resemblyzer</span><span>Librosa</span><span>Flask</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/intelligent-ai-attendance" target="_blank" rel="noopener">App code →</a>
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/ai-attendance-landing-page" target="_blank" rel="noopener">Landing page code →</a>
+          <a class="project-link" href="https://ai-attendance-landing-page-one.vercel.app/" target="_blank" rel="noopener">Live landing page →</a>
+        </div>
+      </article>
+
+      <article class="glass project-card">
+        <div>
+          <div class="project-type">Major College Project · NLP</div>
+          <h3>AI-Based News Aggregator</h3>
+          <p>Collects news from multiple sources and uses NLP to categorize and summarize articles. Built as my final-year major project.</p>
+          <!-- TODO: add the repo / demo link below once it is public, e.g.
+          <div class="project-links"><a class="project-link" href="REPO_URL" ...>View on GitHub →</a></div> -->
+          <div class="project-tech">
+            <span>Python</span><span>NLP</span><span>Web Scraping</span><span>Summarization</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass project-card">
+        <div>
+          <div class="project-type">AI / NLP</div>
+          <h3>AI News Summarization</h3>
+          <p>A text summarization app that turns news articles into short summaries using a transformer model.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Transformers</span><span>BART / T5</span><span>Summarization</span>
+          </div>
+        </div>
+        <a class="project-link" href="https://github.com/Bhavani-BMNHK/Text-Summarizer-T5-App" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="glass project-card">
+        <div>
+          <div class="project-type">AI / NLP</div>
+          <h3>AI Resume Analyzer</h3>
+          <p>Reads a resume PDF, extracts its content and suggests suitable job roles, with job recommendations.</p>
+          <div class="project-tech">
+            <span>Python</span><span>NLP</span><span>pdfplumber</span><span>Django</span>
+          </div>
+        </div>
+        <a class="project-link" href="https://github.com/Bhavani-BMNHK/AI-ML-Django-Projects" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="glass project-card">
+        <div>
+          <div class="project-type">AI / Machine Learning</div>
+          <h3>Crop Recommendation System</h3>
+          <p>Recommends a suitable crop from soil nutrient and climate inputs, and shows the prediction confidence. Served through a Django web app.</p>
+          <!-- TODO: <p class="project-result">Random Forest · XX% test accuracy</p> -->
+          <div class="project-tech">
+            <span>Python</span><span>Random Forest</span><span>Django</span>
+          </div>
+        </div>
+        <a class="project-link" href="https://github.com/Bhavani-BMNHK/AI-ML-Django-Projects" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="glass project-card">
+        <div>
+          <div class="project-type">AI / Machine Learning</div>
+          <h3>Cinnamon Quality Classification</h3>
+          <p>Classifies cinnamon quality from chemical-property data. Random Forest and KNN were compared on a held-out test set.</p>
+          <!-- TODO: <p class="project-result">Random Forest XX% · KNN XX% test accuracy</p> -->
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Random Forest</span><span>KNN</span>
+          </div>
+        </div>
+        <a class="project-link" href="https://github.com/Bhavani-BMNHK/AI-ML-Django-Projects" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+    </div>
+
+    <details class="more-projects">
+      <summary>More projects</summary>
+      <div class="projects-grid">
+
+        <article class="glass project-card">
+          <div>
+            <div class="project-type">AI / Machine Learning</div>
+            <h3>CreditWise Loan Prediction</h3>
+            <p>Predicts loan approval from applicant and financial information using classification models.</p>
+            <div class="project-tech"><span>Python</span><span>Pandas</span><span>Scikit-learn</span></div>
+          </div>
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/CreditWise-Loan-System" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="glass project-card">
+          <div>
+            <div class="project-type">AI / Machine Learning</div>
+            <h3>SmartCart Customer Segmentation</h3>
+            <p>Groups customers into segments with K-Means clustering to find distinct buying patterns.</p>
+            <div class="project-tech"><span>Python</span><span>Pandas</span><span>NumPy</span><span>K-Means</span></div>
+          </div>
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/SmartCart-Segmentation-System" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="glass project-card">
+          <div>
+            <div class="project-type">Python / Flask</div>
+            <h3>REST API with Flask</h3>
+            <p>A Flask REST API with GET, POST, PUT and DELETE endpoints for managing user data.</p>
+            <div class="project-tech"><span>Python</span><span>Flask</span><span>REST API</span><span>JSON</span></div>
+          </div>
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/task-4-rest-api" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="glass project-card">
+          <div>
+            <div class="project-type">Python</div>
+            <h3>News Headlines Scraper</h3>
+            <p>Scrapes public news headlines with Requests and BeautifulSoup and saves them to a text file.</p>
+            <div class="project-tech"><span>Python</span><span>Requests</span><span>BeautifulSoup</span></div>
+          </div>
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/task-3-news-scraper" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="glass project-card">
+          <div>
+            <div class="project-type">Python CLI</div>
+            <h3>To-Do List Application</h3>
+            <p>A console task manager with persistent file storage for adding, viewing and removing tasks.</p>
+            <div class="project-tech"><span>Python</span><span>File Handling</span></div>
+          </div>
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/-task-2-todo" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="glass project-card">
+          <div>
+            <div class="project-type">Python CLI</div>
+            <h3>Calculator CLI App</h3>
+            <p>A command-line calculator with input validation and division-by-zero protection.</p>
+            <div class="project-tech"><span>Python</span><span>Functions</span><span>CLI</span></div>
+          </div>
+          <a class="project-link" href="https://github.com/Bhavani-BMNHK/task-1-calculator" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+      </div>
+    </details>
+  </div>
 </section>
 
-<!-- ===================== EXPERIENCE ===================== -->
+<!-- ============ EXPERIENCE ============ -->
 <section id="experience">
-    <div class="container">
-        <div class="section-title">
-            <small>Experience</small>
-            <h2>Where I gained practical experience.</h2>
-        </div>
-
-        <div class="glass experience-card">
-            <div class="experience-header">
-                <div>
-                    <h3>Python Developer Intern</h3>
-                    <div class="company">Elevate Labs, Bengaluru</div>
-                </div>
-                <div class="date">Aug 2026 – Oct 2026</div>
-            </div>
-
-            <ul>
-                <li>Completed the Python Developer Internship program and received a certificate of completion with a Best Performer mark.</li>
-                <li>Worked on Python development concepts, writing clean and maintainable code.</li>
-                <li>Implemented Python-based applications to meet project requirements.</li>
-                <li>Practised understanding technical requirements and troubleshooting issues while delivering working solutions.</li>
-            </ul>
-        </div>
-
-        <div class="glass experience-card">
-            <div class="experience-header">
-                <div>
-                    <h3>Machine Learning Intern</h3>
-                    <div class="company">Karunadu Technologies Pvt. Ltd., Bengaluru</div>
-                </div>
-                <div class="date">Feb 2026 – May 2026</div>
-            </div>
-
-            <ul>
-                <li>Worked on end-to-end machine learning projects using Python and Django.</li>
-                <li>Applied Logistic Regression, Decision Tree, Random Forest and KNN classification algorithms.</li>
-                <li>Worked with real-world datasets involving data preprocessing, model training and evaluation.</li>
-                <li>Developed interactive Django-based applications for machine learning projects.</li>
-                <li>Gained practical experience in machine learning, data analysis and web application development.</li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>04 / experience</small>
+      <h2>Where I gained practical experience.</h2>
     </div>
+
+    <div class="glass experience-card">
+      <div class="experience-header">
+        <div>
+          <h3>Python Developer Intern</h3>
+          <div class="company">Elevate Labs, Bengaluru</div>
+        </div>
+        <div class="date">Aug 2026 – Oct 2026</div>
+      </div>
+      <ul>
+        <li>Completed the program with a <strong>Best Performer</strong> mark.</li>
+        <li>Built Python applications from written requirements, with clean and maintainable code.</li>
+        <li>Debugged and fixed issues while delivering working solutions.</li>
+        <!-- TODO: add 1-2 specific bullets: what you built, which libraries, what it did -->
+      </ul>
+    </div>
+
+    <div class="glass experience-card">
+      <div class="experience-header">
+        <div>
+          <h3>Machine Learning Intern</h3>
+          <div class="company">Karunadu Technologies Pvt. Ltd., Bengaluru</div>
+        </div>
+        <div class="date">Feb 2026 – May 2026</div>
+      </div>
+      <ul>
+        <li>Built end-to-end ML projects with Python and Django, from data preprocessing to model training, evaluation and a web interface.</li>
+        <li>Trained and compared Logistic Regression, Decision Tree, Random Forest and KNN classifiers on real-world datasets.</li>
+        <li>Built interactive Django apps so non-technical users can run the models.</li>
+        <!-- TODO: name the projects you built here and add a result, e.g. "reached XX% accuracy" -->
+      </ul>
+    </div>
+  </div>
 </section>
 
-<!-- ===================== EDUCATION ===================== -->
+<!-- ============ EDUCATION ============ -->
 <section id="education">
-    <div class="container">
-        <div class="section-title">
-            <small>Education</small>
-            <h2>My academic journey.</h2>
-        </div>
-
-        <div class="education-grid">
-            <div class="glass education-card">
-                <div>
-                    <h3>B.E. – Computer Science and Engineering</h3>
-                    <p>Sri Revana Siddeshwara Institute of Technology (SRSIT), Bengaluru</p>
-                    <p>2022 – 2026</p>
-                </div>
-                <div class="education-score">CGPA: 8.06/10</div>
-            </div>
-
-            <div class="glass education-card">
-                <div>
-                    <h3>PUC – Science (PCMB)</h3>
-                    <p>Morarji Desai Residential PU College, Kamthana, Bidar</p>
-                    <p>Completed in 2022</p>
-                </div>
-                <div class="education-score">77.5%</div>
-            </div>
-
-            <div class="glass education-card">
-                <div>
-                    <h3>SSLC</h3>
-                    <p>Govt. High School, Kamthana, Bidar</p>
-                    <p>Completed in 2020</p>
-                </div>
-                <div class="education-score">88.16%</div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>05 / education</small>
+      <h2>Education &amp; training.</h2>
     </div>
+
+    <div class="education-grid">
+      <div class="glass education-card">
+        <div>
+          <h3>B.E. Computer Science and Engineering</h3>
+          <p>Sri Revana Siddeshwara Institute of Technology (SRSIT), Bengaluru</p>
+          <p>2022 – 2026</p>
+        </div>
+        <div class="education-score">CGPA 8.06 / 10</div>
+      </div>
+
+      <div class="glass education-card">
+        <div>
+          <h3>AI &amp; Machine Learning – Prime 2.0</h3>
+          <p>Apna College · Completed Mar 2026</p>
+          <p>Machine Learning, Generative AI, LLMs, Agentic AI (LangChain, LangGraph) and OpenCV, with hands-on projects.</p>
+        </div>
+        <div class="education-score">Certified</div>
+      </div>
+
+      <div class="glass education-card">
+        <div>
+          <h3>PUC – Science (PCMB)</h3>
+          <p>Morarji Desai Residential PU College, Kamthana, Bidar · 2022</p>
+        </div>
+        <div class="education-score">77.5%</div>
+      </div>
+
+      <div class="glass education-card">
+        <div>
+          <h3>SSLC</h3>
+          <p>Govt. High School, Kamthana, Bidar · 2020</p>
+        </div>
+        <div class="education-score">88.16%</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ===================== EDUCATION / TRAINING ===================== -->
-<section id="education-training">
-    <div class="container">
-        <div class="section-title">
-            <small>Education / Training</small>
-            <h2>Learning and continuous growth.</h2>
-        </div>
-
-        <div class="glass experience-card">
-            <div class="experience-header">
-                <div>
-                    <h3>AI & Machine Learning – Prime 2.0</h3>
-                    <div class="company">Apna College</div>
-                </div>
-                <div class="date">Mar 21, 2026 – Completed</div>
-            </div>
-            <ul>
-                <li>Completed the AI & Machine Learning Prime 2.0 course and received the course completion certificate.</li>
-                <li>Learned core concepts of Artificial Intelligence and Machine Learning.</li>
-                <li>Built practical knowledge through hands-on learning and projects.</li>
-                <li>Strengthened Python and machine learning skills for real-world applications.</li>
-                <li>Instructor: Shradha Khapra.</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-<!-- ===================== CERTIFICATES ===================== -->
+<!-- ============ CERTIFICATES ============ -->
 <section id="certificates">
-    <div class="container">
-        <div class="section-title">
-            <small>Certificates</small>
-            <h2>Certified learning and internships.</h2>
-            <p>Certificates I have earned through internships and training programs.</p>
-        </div>
-
-        <div class="cert-grid">
-            <div class="glass cert-card">
-                <div class="cert-type">Internship Certificate</div>
-                <h3>Python Developer Internship</h3>
-                <div class="cert-issuer">Elevate Labs, Bengaluru</div>
-                <div class="cert-date">23 Aug 2026 – 20 Oct 2026</div>
-            </div>
-
-            <div class="glass cert-card">
-                <div class="cert-type">Internship Certificate</div>
-                <h3>Python Programming &amp; Applied Machine Learning</h3>
-                <div class="cert-issuer">Karunadu Technologies Pvt. Ltd.</div>
-                <div class="cert-date">02 Feb 2026 – 11 May 2026</div>
-            </div>
-
-            <div class="glass cert-card">
-                <div class="cert-type">Course Certificate</div>
-                <h3>AI &amp; Machine Learning – Prime 2.0</h3>
-                <div class="cert-issuer">Apna College</div>
-                <div class="cert-date">Certificate of Completion</div>
-            </div>
-        </div>
-
-        <div class="glass linkedin-box">
-            <div>
-                <h3>See and verify my certificates</h3>
-                <p>All my certificates are available on my LinkedIn profile.</p>
-            </div>
-            <a href="https://www.linkedin.com/in/bhavani-mn-houdhkhane-1167062a" target="_blank" rel="noopener" class="btn btn-primary">View on LinkedIn →</a>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>06 / certificates</small>
+      <h2>Certificates.</h2>
+      <p>Click a certificate to open it.</p>
     </div>
+
+    <div class="cert-grid">
+
+      <div class="glass cert-card">
+        <a class="cert-photo cert-pdf" href="/images/certificates/elevate-labs-python-internship.png" target="_blank" rel="noopener" aria-label="Open Elevate Labs certificate">
+          <span class="cert-pdf-label"><strong>IMG</strong>View certificate →</span>
+        </a>
+        <div class="cert-body">
+          <div class="cert-type">Internship Certificate</div>
+          <h3>Python Developer Internship</h3>
+          <div class="cert-issuer">Elevate Labs, Bengaluru</div>
+          <div class="cert-date">23 Aug 2026 – 20 Oct 2026</div>
+        </div>
+      </div>
+
+      <div class="glass cert-card">
+        <a class="cert-photo cert-pdf" href="/images/certificates/karunadu-ml-internship.pdf" target="_blank" rel="noopener" aria-label="Open Karunadu Technologies certificate PDF">
+          <span class="cert-pdf-label"><strong>PDF</strong>View certificate →</span>
+        </a>
+        <div class="cert-body">
+          <div class="cert-type">Internship Certificate</div>
+          <h3>Python Programming &amp; Applied Machine Learning</h3>
+          <div class="cert-issuer">Karunadu Technologies Pvt. Ltd.</div>
+          <div class="cert-date">02 Feb 2026 – 11 May 2026</div>
+        </div>
+      </div>
+
+      <div class="glass cert-card">
+        <a class="cert-photo cert-pdf" href="/images/certificates/apna-college-ai-ml.pdf" target="_blank" rel="noopener" aria-label="Open Apna College certificate PDF">
+          <span class="cert-pdf-label"><strong>PDF</strong>View certificate →</span>
+        </a>
+        <div class="cert-body">
+          <div class="cert-type">Course Certificate</div>
+          <h3>AI &amp; Machine Learning – Prime 2.0</h3>
+          <div class="cert-issuer">Apna College</div>
+          <div class="cert-date">Certificate of Completion · Mar 2026</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="glass linkedin-box">
+      <div>
+        <h3>Verify on LinkedIn</h3>
+        <p>All certificates are also listed on my LinkedIn profile.</p>
+      </div>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/bhavani-mn-houdhkhane-1167062a" target="_blank" rel="noopener">View on LinkedIn →</a>
+    </div>
+  </div>
 </section>
 
-<!-- ===================== CONTACT ===================== -->
+<!-- ============ CONTACT ============ -->
 <section id="contact">
-    <div class="container">
-        <div class="section-title">
-            <small>Contact</small>
-            <h2>Let's connect.</h2>
-            <p>I'm open to entry-level opportunities, internships and projects in Python, Data Science and AI/ML.</p>
-        </div>
-
-        <div class="contact-grid">
-            <div class="glass contact-info">
-                <h3>Get in touch</h3>
-                <p>If you have an opportunity, project or simply want to connect, feel free to reach out.</p>
-
-                <div class="contact-item">
-                    <span>Email</span>
-                    <a href="mailto:bhavanimnhoudhkhane@gmail.com">bhavanimnhoudhkhane@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <span>Location</span>
-                    <div>Bengaluru, Karnataka</div>
-                </div>
-                <div class="contact-item">
-                    <span>LinkedIn</span>
-                    <a href="https://www.linkedin.com/in/bhavani-mn-houdhkhane-1167062a" target="_blank" rel="noopener">View LinkedIn Profile</a>
-                </div>
-                <div class="contact-item">
-                    <span>GitHub</span>
-                    <a href="https://github.com/Bhavani-BMNHK" target="_blank" rel="noopener">View GitHub Profile</a>
-                </div>
-            </div>
-
-            <form class="glass contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Paste your free Web3Forms access key below (see web3forms.com) -->
-                <input type="hidden" name="access_key" value="586aac3a-cf58-4093-8e33-8902c29c4fb1">
-                <input type="hidden" name="subject" value="New message from my portfolio website">
-                <input type="hidden" name="from_name" value="Portfolio Website">
-                <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
-
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" id="sendBtn">Send Message</button>
-                <p class="form-status" id="formStatus" role="status"></p>
-            </form>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>07 / contact</small>
+      <h2>Let's connect.</h2>
+      <p>I'm open to entry-level AI/ML, Data Science and Python Developer roles, and to internships.</p>
     </div>
+
+    <div class="contact-grid">
+      <div class="glass contact-info">
+        <h3>Get in touch</h3>
+        <p>The fastest way to reach me is email. I reply within a day.</p>
+        <div class="contact-item"><span>Email</span><a href="mailto:bhavanimnhoudhkhane@gmail.com">bhavanimnhoudhkhane@gmail.com</a></div>
+        <div class="contact-item"><span>Location</span><div>Bengaluru, Karnataka</div></div>
+        <div class="contact-item"><span>LinkedIn</span><a href="https://www.linkedin.com/in/bhavani-mn-houdhkhane-1167062a" target="_blank" rel="noopener">bhavani-mn-houdhkhane</a></div>
+        <div class="contact-item"><span>GitHub</span><a href="https://github.com/Bhavani-BMNHK" target="_blank" rel="noopener">Bhavani-BMNHK</a></div>
+      </div>
+
+      <div class="glass contact-form">
+        <h3 style="font-family:var(--font-display);font-size:21px;margin-bottom:12px;">Hiring?</h3>
+        <p style="color:var(--text-dim);font-size:14.5px;">Grab my resume or send me a message directly.</p>
+        <div class="contact-actions">
+          <a class="btn btn-signal" href="/Bhavani_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn btn-outline" href="mailto:bhavanimnhoudhkhane@gmail.com?subject=Opportunity%20for%20Bhavani">Email me</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
 <footer>
-    <div class="container">
-        <div class="footer-main">
-            <div class="footer-brand">
-                <h2>Bhavani<span>.</span></h2>
-                <p>Computer Science graduate passionate about Python, Data Science, AI and Machine Learning.</p>
-            </div>
-
-            <div class="footer-column">
-                <h4>Quick Links</h4>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#education-training">Training</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <div class="footer-column">
-                <h4>Connect</h4>
-                <a href="https://github.com/Bhavani-BMNHK" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.linkedin.com/in/bhavani-mn-houdhkhane-1167062a" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="mailto:bhavanimnhoudhkhane@gmail.com">Email</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div>© 2026 Bhavani. All Rights Reserved.</div>
-            <div>Built with Python & Flask</div>
-        </div>
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <h2>Bhavani<span>.</span></h2>
+        <p>Python &amp; AI/ML developer from Bengaluru.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <a href="https://github.com/Bhavani-BMNHK" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/bhavani-mn-houdhkhane-1167062a" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:bhavanimnhoudhkhane@gmail.com">Email</a>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <span>© 2026 Bhavani. All rights reserved.</span>
+      <span>Built with Python &amp; Flask</span>
+    </div>
+  </div>
 </footer>
 
-<script>
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
-
-  navToggle.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('open');
-    navToggle.classList.toggle('active', isOpen);
-    navToggle.setAttribute('aria-expanded', isOpen);
-  });
-
-  // Close the mobile menu after tapping a link
-  navMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('open');
-      navToggle.classList.remove('active');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  // Contact form: send to Web3Forms and show a message on the page
-  const contactForm = document.getElementById('contactForm');
-  const formStatus = document.getElementById('formStatus');
-  const sendBtn = document.getElementById('sendBtn');
-
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    sendBtn.disabled = true;
-    sendBtn.textContent = 'Sending...';
-    formStatus.textContent = '';
-    formStatus.className = 'form-status';
-    try {
-      const res = await fetch(contactForm.action, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
-      });
-      const data = await res.json();
-      if (data.success) {
-        formStatus.textContent = 'Thank you! Your message has been sent. I will reply soon.';
-        formStatus.classList.add('ok');
-        contactForm.reset();
-      } else {
-        throw new Error(data.message || 'Something went wrong');
-      }
-    } catch (err) {
-      formStatus.textContent = 'Sorry, the message could not be sent. Please email me directly.';
-      formStatus.classList.add('err');
-    }
-    sendBtn.disabled = false;
-    sendBtn.textContent = 'Send Message';
-  });
-</script>
-
+<script src="/script.js"></script>
 </body>
 </html>

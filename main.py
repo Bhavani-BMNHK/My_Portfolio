@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
-# "public" holds style.css and images. Vercel serves this folder from its CDN,
-# and Flask serves it at the site root when you run locally.
+# "public" holds style.css, script.js and images. Vercel serves this folder
+# from its CDN, and Flask serves it at the site root when you run locally.
 app = Flask(__name__, static_folder="public", static_url_path="")
 
 
